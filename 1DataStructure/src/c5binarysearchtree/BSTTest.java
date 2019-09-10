@@ -13,8 +13,9 @@ public class BSTTest {
             ebst.add(num);
         }
 
-        System.out.println("ebst:"+ebst);
+
         ebst.preOrder();
+        System.out.println("ebst2:"+ebst);
 
     }
 }

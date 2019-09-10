@@ -134,7 +134,7 @@ public class BST<E extends Comparable<E>> {
 
 
     /**
-     * 二分搜索树的前序遍历
+     * 1.二分搜索树的前序遍历，最常用
      */
     public void preOrder(){
         preOrder(root);
@@ -156,6 +156,43 @@ public class BST<E extends Comparable<E>> {
         preOrder(node.left);
         preOrder(node.right);
     }
+
+    /**
+     * 二分搜索树的中序遍历
+     */
+    public void inOrder(){
+        inOrder(root);
+    }
+
+    /**
+     * 中序遍历以node为根的二分搜索树，递归算法，私有
+     * @param node
+     */
+    private void inOrder(Node node){
+        if (node==null){
+
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     @Override
     public String toString() {
