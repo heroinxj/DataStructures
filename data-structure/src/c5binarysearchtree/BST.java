@@ -152,7 +152,7 @@ public class BST<E extends Comparable<E>> {
         }
 
         //递归组成的最小逻辑
-        System.out.println("preOrder:"+node.e);
+        System.out.println("preOrder- "+node.e);
         preOrder(node.left);
         preOrder(node.right);
     }
@@ -170,24 +170,32 @@ public class BST<E extends Comparable<E>> {
      */
     private void inOrder(Node node){
         if (node==null){
-
+            return;
         }
+        inOrder(node.left);
+        System.out.println("inOrder- "+node.e);
+        inOrder(node.right);
     }
 
+    /**
+     * 二分搜索树的后序遍历
+     */
+    public void postOrder(){
+        postOrder(root);
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+    /**
+     * 后序遍历以node为根的二分搜索树，递归
+     * @param node
+     */
+    private void postOrder(Node node){
+        if (node==null){
+            return;
+        }
+        postOrder(node.left);
+        postOrder(node.right);
+        System.out.println("postOrder- "+node.e);
+    }
 
 
 
