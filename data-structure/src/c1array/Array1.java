@@ -6,6 +6,12 @@ package c1array;
  * @date 2019/8/12 13:22
  */
 public class Array1 {
+
+    public static void main(String[] args) {
+        Array1 array1 = new Array1(50);
+        System.out.println(array1.data);
+        System.out.println(array1.size);
+    }
     private int[] data;
     private int size;//数组长度，元素个数
 
@@ -15,7 +21,7 @@ public class Array1 {
     }
 
     public Array1(){
-        this(12);//?
+        this(12);
     }
 
     //元素个数，有效占位

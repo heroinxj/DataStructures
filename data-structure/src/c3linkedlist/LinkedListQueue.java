@@ -12,7 +12,7 @@ import c2stackqueues.queue.Queue;
  */
 public class LinkedListQueue<E> implements Queue<E> {
 
-    public class Node{
+    public  class Node{
         public E e;
         public Node next;
 
@@ -98,6 +98,8 @@ public class LinkedListQueue<E> implements Queue<E> {
             }
             size--;
             return deNode.e;
+
+
         }
     }
 

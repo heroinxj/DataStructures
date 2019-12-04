@@ -3,7 +3,7 @@ package c2stackqueues.stack;
 import c1array.Array2;
 
 /**
- * 基于数组实现的 栈
+ * 基于数组实现的 栈，栈是先进后出，所有的操作都集中在栈顶；正好对应数组的尾端操作，时间复杂度都为O(1)
  * @author Heroin X
  * @date 2019/8/13 21:11
  *

@@ -1,6 +1,8 @@
 package c3linkedlist;
 
 /**
+ * 单向链表
+ *
  * @author Heroin X
  * @date 2019/9/2 9:34
  */
@@ -63,6 +65,7 @@ public class LinkedList<E> {
     public void addFist(E e){
         Node newNode = new Node(e);
         newNode.next=head;
+        //?,头结点变成真正的头结点，而不是以前失效的头结点！
         head=newNode;
 //        head = new Node(e, head);//代替前面三句
 
@@ -106,7 +109,7 @@ public class LinkedList<E> {
     }
 
 
-    public void addLast(E e){
+    public void addLast(E  e){
         add(e,size);
     }
 
@@ -129,13 +132,4 @@ public class LinkedList<E> {
     public boolean isEmpty(){
         return size==0;
     }
-
-
-
-
-
-
-
-
-
 }

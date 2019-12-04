@@ -7,19 +7,17 @@ package c5binarysearchtree;
 public class BSTTest {
     public static void main(String[] args) {
         BST<Integer> ebst = new BST<>();
-        int[] nums={5,2,4,1,8};
-        for (int num :nums
-             ) {
+        int[] nums={5,3,6,8,4,2};
+        for (int num :nums) {
             ebst.add(num);
         }
-
-
 
         ebst.preOrder();
         System.out.println();
         ebst.inOrder();
         System.out.println();
         ebst.postOrder();
+
 
 
     }

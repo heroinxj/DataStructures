@@ -4,6 +4,7 @@ import c2stackqueues.stack.Stack;
 
 /**
  * 基于链表实现的栈
+ *      对应操作链表的头部，方便处理。
  *
  * @author Heroin X
  * @date 2019/9/3 10:28
