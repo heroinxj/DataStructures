@@ -4,11 +4,12 @@ import c4.demo1.antlrout.DemoLexer;
 import c4.demo1.antlrout.DemoParser;
 import org.antlr.v4.runtime.ANTLRInputStream;
 import org.antlr.v4.runtime.CommonTokenStream;
+import org.antlr.v4.runtime.misc.TestRig;
 import org.antlr.v4.runtime.tree.ParseTree;
 
 /**
  * @author Heroin X
- * @date 2019/10/13 14:18
+ * @date 2020/1/5 14:18
  */
 public class MyCalculator {
     public static void run(String expr) throws Exception{
@@ -35,7 +36,10 @@ public class MyCalculator {
     }
 
     public static void main(String[] args) throws Exception{
-
+        TestRig testRig = new TestRig();
+//        testRig.getClass().
+//        TestRig.class ;
+//
 
         String[] testStr={
                 "2",

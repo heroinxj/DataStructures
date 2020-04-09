@@ -19,7 +19,7 @@ import java.util.ArrayList;
  * 可以生成dot文件，且可以可视化。（http://viz-js.com/ + http://www.graphviz.org/  +  https://github.com/mdaines/viz.js）
  * 小bug  打印语句 无法可视化。
  * @author Heroin X
- * @date 2019/11/2 10:15
+ * @date 2019/1/2 10:15
  */
 public class ASTGenerator2 {
     static ArrayList<String> LineNum = new ArrayList<String>();
@@ -27,8 +27,9 @@ public class ASTGenerator2 {
     static ArrayList<String> Content = new ArrayList<String>();
 
     private static String readFile() throws IOException {
-       // File file = new File("D:\\lib\\IDEA_space\\mygithub-repository\\data-structures\\antlr-demo1\\src\\main\\resources\\Blabla.java");
-        File file = new File("D:\\lib\\IDEA_space\\mygithub-repository\\data-structures\\antlr-demo1\\src\\main\\java\\c4\\demo6java\\hello\\HelloWord.java");
+//        File file = new File("D:\\lib\\IDEA_space\\mygithub-repository\\data-structures\\antlr-demo1\\src\\main\\resources\\demo.txt");
+        File file = new File("D:\\lib\\IDEA_space\\mygithub-repository\\data-structures\\antlr-demo1\\src\\main\\resources\\Blabla.java");
+//        File file = new File("D:\\lib\\IDEA_space\\mygithub-repository\\data-structures\\antlr-demo1\\src\\main\\java\\c4\\demo6java\\hello\\HelloWord.java");
         byte[] encoded = Files.readAllBytes(file.toPath());
         return new String(encoded, Charset.forName("UTF-8"));
     }
@@ -42,7 +43,6 @@ public class ASTGenerator2 {
         ParserRuleContext ctx = parser.compilationUnit();
 
         generateAST(ctx, false, 0);
-
         System.out.println("digraph G {");
         printDOT();
         System.out.println("}");

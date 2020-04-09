@@ -2,7 +2,7 @@ package c5binarysearchtree;
 
 /**
  * @author Heroin X
- * @date 2019/10/5 18:49
+ * @date 2019/12/29 18:49
  */
 public class Bst2<E extends Comparable<E>> {
     class Node{
