@@ -1,5 +1,7 @@
 package sort;
 
+import java.util.Arrays;
+
 /**
  * @author Heroin X
  * @date 2020/3/21 16:50
@@ -8,7 +10,7 @@ public class QuickSort {
     public static void main(String[] args) {
         int[] arr = new int[]{8,9,1,7,2,3,5,4,6,0};
         new QuickSort().quickSort2(arr, 0, 9);
-        System.out.println(arr);
+        System.out.println(Arrays.toString(arr));
     }
 
     /**
